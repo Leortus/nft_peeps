@@ -15,11 +15,38 @@ nav {
 
 header {
   text-align: center;
+  height: 800px;
+
+  background-image: url(../img/dark_peep_header.svg),
+    url(../img/glasses_peep_header.svg);
+
+  background-position: left bottom 100%, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+}
+
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 97px;
+  line-height: 87px;
+  text-align: center;
+  color: #222222;
+}
+
+p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #404756;
 }
 
 .button {
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -54,7 +81,6 @@ header {
 
 .navigation-bar {
   text-align: right;
-  box-shadow: 0px 3px 12px rgba(18, 18, 18, 0.06);
 }
 
 .navigation-bar ul {
@@ -82,4 +108,32 @@ header {
   text-decoration: none;
   color: #121212;
   padding: 51px 30px;
+}
+
+.header-container {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-textbox-wraper {
+  max-width: 30%;
+}
+
+.pre-header-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+}
+
+header p {
+  margin-top: 40px;
+}
+
+header .button {
+  margin-top: 27px;
 }
