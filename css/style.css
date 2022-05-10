@@ -45,6 +45,35 @@ p {
   color: #404756;
 }
 
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 58px;
+  /* identical to box height, or 90% */
+
+  text-align: center;
+
+  color: #222222;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  color: #222222;
+  margin: 17px 0;
+}
+
+hr {
+  margin: 30px 0;
+  max-width: 370px;
+  color: rgba(64, 71, 86, 0.6);
+}
+
 .button {
   border: none;
   padding: 15px 32px;
@@ -118,7 +147,7 @@ p {
 }
 
 .header-textbox-wraper {
-  max-width: 30%;
+  max-width: 40%;
 }
 
 .pre-header-text {
@@ -129,6 +158,13 @@ p {
   line-height: 25px;
   color: #222222;
 }
+.smear-light-brown::before {
+  content: url(../img/smear_light_brown.svg);
+  position: relative;
+  top: 4px;
+  left: 15px;
+  z-index: -1;
+}
 
 header p {
   margin-top: 40px;
@@ -136,4 +172,55 @@ header p {
 
 header .button {
   margin-top: 27px;
+}
+
+.your-class {
+  background-image: url("data:image/svg+xml,%3Csvg width='34' height='36' viewBox='0 0 34 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.16664 7.46381C6.34027 4.1243 9.53203 1.0921 13.2162 0.330012C16.9005 -0.453452 21.0773 1.0332 24.9084 3.22265C28.7394 5.41211 32.1821 8.32543 32.9415 11.7949C33.6796 15.2642 31.6918 19.3107 29.9815 23.2098C28.2499 27.1086 26.7958 30.8814 23.9499 33.1894C21.1042 35.476 16.8455 36.2977 12.6828 35.7305C8.49863 35.1845 4.41043 33.2496 2.24537 30.0898C0.0804808 26.9086 -0.161278 22.5025 0.316772 18.4868C0.79499 14.4498 1.99301 10.8033 4.16664 7.46381Z' fill='%23FFDBB4'/%3E%3C/svg%3E");
+}
+
+.collection {
+  max-width: 1440px;
+  margin: 120px auto;
+}
+
+.collection-wraper {
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 140px;
+}
+
+.collection-info {
+  width: 45%;
+  padding-left: 230px;
+}
+
+.collection-info p {
+  text-align: left;
+  max-width: 335px;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #404756;
+}
+
+.colection-peeps {
+  width: 50%;
+}
+
+.colection-peeps img {
+  height: 290px;
+}
+
+.colection-peeps {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 45px;
+}
+
+.colection-peep-container {
+  margin: -70px 0 0 -40px;
 }
