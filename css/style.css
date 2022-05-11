@@ -41,7 +41,7 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  text-align: center;
+
   color: #404756;
 }
 
@@ -51,10 +51,15 @@ h2 {
   font-weight: 700;
   font-size: 65px;
   line-height: 58px;
-  /* identical to box height, or 90% */
+  color: #222222;
+}
 
-  text-align: center;
-
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
   color: #222222;
 }
 
@@ -68,10 +73,13 @@ h4 {
   margin: 17px 0;
 }
 
-hr {
-  margin: 30px 0;
-  max-width: 370px;
-  color: rgba(64, 71, 86, 0.6);
+h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: #222222;
 }
 
 .button {
@@ -165,6 +173,13 @@ hr {
   left: 15px;
   z-index: -1;
 }
+.smear-orange-brown::before {
+  content: url(../img/smear_orange_brown.svg);
+  position: relative;
+  top: 4px;
+  left: 15px;
+  z-index: -1;
+}
 
 header p {
   margin-top: 40px;
@@ -181,8 +196,14 @@ header .button {
 .collection {
   max-width: 1440px;
   margin: 120px auto;
+  text-align: center;
 }
 
+.collection hr {
+  margin: 30px 0;
+  max-width: 370px;
+  color: rgba(64, 71, 86, 0.6);
+}
 .collection-wraper {
   display: flex;
   flex-direction: row;
@@ -193,12 +214,11 @@ header .button {
 .collection-info {
   width: 45%;
   padding-left: 230px;
+  text-align: left;
 }
 
 .collection-info p {
-  text-align: left;
   max-width: 335px;
-
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -223,4 +243,85 @@ header .button {
 
 .colection-peep-container {
   margin: -70px 0 0 -40px;
+}
+
+.rarity {
+  max-width: 1440px;
+  margin: 0px auto;
+
+  text-align: left;
+  background: #fbf1e6;
+  z-index: auto;
+}
+
+.rarity::after {
+  content: "";
+  background: url("../img/pink-block-wave-bottom.svg");
+  position: relative;
+  display: block;
+  height: 140px;
+  bottom: -100%;
+  left: 0;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.rarity::before {
+  content: "";
+  background-image: url("../img/pink-block-wave-bottom.svg");
+  position: relative;
+  display: block;
+  height: 140px;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.rarity-wraper {
+  margin-left: 230px;
+}
+
+.rarity-header-wraper {
+  position: relative;
+  z-index: 2;
+  margin: 78px 0;
+}
+
+.rarity hr {
+  color: rgba(64, 71, 86, 0.6);
+  margin: 70px 0;
+}
+
+.rarity h5 {
+  padding-right: 30px;
+}
+
+.rarity-quality-info-container {
+  display: flex;
+}
+
+.rarity-quality-info {
+  max-width: 50%;
+}
+.rarity-quality-info p {
+  max-width: 50%;
+}
+
+.stat-points-wraper {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.stat-points-wraper img {
+  height: 18px;
+  margin-right: 5px;
+}
+
+.rarity-peep-img {
+  display: block;
+  height: 500px;
 }
