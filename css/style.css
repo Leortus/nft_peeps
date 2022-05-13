@@ -592,6 +592,10 @@ header .button {
   max-width: 1440px;
   margin: 0 auto;
   background: #d3d4ed;
+
+  background-image: url("../img/follow_bubbles_on_bacground.svg");
+  background-repeat: no-repeat;
+  background-position: top 2% left 5%;
 }
 
 .follow::before {
@@ -607,12 +611,63 @@ header .button {
 
 .follow-wraper {
   max-width: 70%;
-  margin: 60px auto;
+  margin: 60px auto 0px auto;
 
-  background-image: url("../img/follow_bubbles_on_bacground.svg");
-  background-repeat: no-repeat;
-  background-position: top -2% left -5%;
-  background-size: 100%;
-  padding-top: 50px;
-  min-height: 100px;
+  margin-top: 50px;
+}
+.follow-headers-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.follow-wraper p {
+  z-index: 1;
+}
+
+.follow-links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.follow-links-container a {
+  margin: 11px 0px;
+  text-decoration: none;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #404756;
+}
+
+.follow-social-media {
+  display: flex;
+  flex-direction: row;
+}
+.follow-social-media a {
+  margin: 11px 40px;
+}
+.follow-navigation-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.creddits {
+  display: flex;
+  flex-direction: row;
+}
+
+.creddits a {
+  margin: 11px 40px 11px 0;
+  text-decoration: none;
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #404756;
 }
