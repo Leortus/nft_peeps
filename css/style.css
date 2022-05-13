@@ -16,13 +16,6 @@ nav {
 header {
   text-align: center;
   height: 800px;
-
-  background-image: url(../img/dark_peep_header.svg),
-    url(../img/glasses_peep_header.svg);
-
-  background-position: left bottom 100%, right bottom;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto, auto;
 }
 
 h1 {
@@ -152,6 +145,15 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  background-image: url(../img/dark_peep_header.svg),
+    url(../img/glasses_peep_header.svg);
+
+  background-position: left bottom 100%, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
 }
 
 .header-textbox-wraper {
@@ -359,7 +361,7 @@ header .button {
 
   grid-template-columns: 20% 60% 20%;
   grid-template-rows: 470px;
-  justify-content: start;
+  justify-content: space-evenly;
   margin-left: 230px;
   margin-top: 106px;
 }
