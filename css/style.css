@@ -194,6 +194,13 @@ h5 {
   left: 15px;
   z-index: -1;
 }
+.smear-blue::before {
+  content: url(../img/smear_blue.svg);
+  position: relative;
+  top: 4px;
+  left: 15px;
+  z-index: -1;
+}
 
 header p {
   margin-top: 40px;
@@ -523,4 +530,89 @@ header .button {
   font-size: 36px;
   line-height: 32px;
   color: #222222;
+}
+
+.faq {
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url("../img/faq_bubbles_on_bacground.svg");
+  background-repeat: no-repeat;
+  background-position: top -2% left -5%;
+  padding-top: 50px;
+}
+
+.collapsible-list {
+  max-width: 70%;
+  margin: 60px auto;
+}
+
+.collapsible-list__button {
+  background-image: url("../img/collapsing-list-plus-icon.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #ffffff;
+
+  color: #121212;
+  cursor: pointer;
+  padding: 25px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  color: #222222;
+}
+
+.active,
+.collapsible-list__button:hover {
+  background-color: rgb(239, 239, 239);
+}
+
+.collapsible-list__content {
+  padding: 15px 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+
+  text-align: left;
+}
+
+.collapsible-list hr {
+  color: rgba(64, 71, 86, 0.6);
+}
+
+.follow {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #d3d4ed;
+}
+
+.follow::before {
+  content: "";
+  background-image: url("../img/faq-blue-block-wave-top.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  height: 100px;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.follow-wraper {
+  max-width: 70%;
+  margin: 60px auto;
+
+  background-image: url("../img/follow_bubbles_on_bacground.svg");
+  background-repeat: no-repeat;
+  background-position: top -2% left -5%;
+  background-size: 100%;
+  padding-top: 50px;
+  min-height: 100px;
 }

@@ -381,23 +381,125 @@
           <p class="team-member-name">John</p>
         </div>
         <div class="team-member-data-wraper">
-          <img src="/img/team_member_jennifer.png" alt="jennifer" />
-          <p class="team-member-role">CEO</p>
-          <p class="team-member-name">Jennifer</p>
+          <img src="/img/team_member_justin.png" alt="Justin" />
+          <p class="team-member-role">Designer</p>
+          <p class="team-member-name">Justin</p>
         </div>
         <div class="team-member-data-wraper">
-          <img src="/img/team_member_jennifer.png" alt="jennifer" />
-          <p class="team-member-role">CEO</p>
-          <p class="team-member-name">Jennifer</p>
+          <img src="/img/team_member_jessica.png" alt="Jessica" />
+          <p class="team-member-role">Designer</p>
+          <p class="team-member-name">Jessica</p>
         </div>
         <div class="team-member-data-wraper">
-          <img src="/img/team_member_jennifer.png" alt="jennifer" />
-          <p class="team-member-role">CEO</p>
-          <p class="team-member-name">Jennifer</p>
+          <img src="/img/team_member_katty.png" alt="Katty" />
+          <p class="team-member-role">Designer</p>
+          <p class="team-member-name">Katty</p>
         </div>
       </div>
     </div>
-    <div class="faq"></div>
-    <div class="follow"></div>
+    <div class="faq">
+      <div class="faq-header-wraper">
+        <p class="pre-header-text smear-blue">Faq</p>
+        <h2>Frequent Questions</h2>
+      </div>
+
+      <div class="collapsible-list">
+        <hr />
+        <button type="button" class="collapsible-list__button">
+          Imperdiet et nunc, ipsum laoreet iaculis aliquet?
+        </button>
+        <div class="collapsible-list__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <hr />
+        <button type="button" class="collapsible-list__button">
+          Mi fringilla sit felis tristique varius tempus?
+        </button>
+        <div class="collapsible-list__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <hr />
+        <button type="button" class="collapsible-list__button">
+          Faucibus nec dictum pellentesque arcu ultrices ultricies?
+        </button>
+        <div class="collapsible-list__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <hr />
+        <button type="button" class="collapsible-list__button">
+          Morbi eget tristique porttitor turpis placerat tristique?
+        </button>
+        <div class="collapsible-list__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <hr />
+        <button type="button" class="collapsible-list__button">
+          Dolor turpis at turpis senectus convallis nunc pellentesque?
+        </button>
+        <div class="collapsible-list__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <hr />
+        <button type="button" class="collapsible-list__button">
+          Amet, viverra tellus ultricies non eros faucibus hendrerit?
+        </button>
+        <div class="collapsible-list__content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="follow">
+      <div class="follow-wraper">
+        <h2>Follow us on</h2>
+        <p>Navigation</p>
+      </div>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible-list__button");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
