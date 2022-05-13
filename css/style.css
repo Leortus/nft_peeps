@@ -187,6 +187,13 @@ h5 {
   left: 15px;
   z-index: -1;
 }
+.smear-dark-pink::before {
+  content: url(../img/smear_dark_pink.svg);
+  position: relative;
+  top: 4px;
+  left: 15px;
+  z-index: -1;
+}
 
 header p {
   margin-top: 40px;
@@ -379,10 +386,11 @@ header .button {
 .roadmap-step-info {
   grid-column: 2;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 60%;
+  max-width: 70%;
   background-image: url(../img/roadmap-step-info-background.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -430,7 +438,7 @@ header .button {
 
 .roadmap-step-info:first-child {
   position: relative;
-  background-image: url();
+  background-color: yellow;
 }
 
 .sittin_woman_container {
@@ -446,4 +454,73 @@ header .button {
 .bubbles_where_woman_sits {
   position: absolute;
   top: 100px;
+}
+
+.team {
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+
+  background: #fddbe2;
+  z-index: auto;
+}
+
+.team-header-wraper {
+  position: relative;
+  z-index: 2;
+  margin: 78px 0;
+}
+
+.team::after {
+  content: "";
+  background: url("../img/team-block-wave-bottom.svg");
+  position: relative;
+  background-repeat: no-repeat;
+  display: block;
+  height: 112px;
+  bottom: -100%;
+  left: 0;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.team::before {
+  content: "";
+  background-image: url("../img/team-block-wave-bottom.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  height: 112px;
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.team-member-block-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: 80px auto 125px auto;
+}
+
+.team-member-role {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: #222222;
+}
+
+.team-member-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 32px;
+  color: #222222;
 }
